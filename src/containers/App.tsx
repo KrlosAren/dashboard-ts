@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
+import Navbar from "../components/Navbar/Navbar";
 import "../styles/main.scss";
 
 function App() {
   return (
     <div className="main">
       <Navbar />
-      <div className="main__leftsidebar">left</div>
+      <LeftSidebar />
       <div className="main__center">center</div>
       <div className="main__rightsidebar">right</div>
     </div>

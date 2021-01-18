@@ -1,0 +1,24 @@
+.menu__container {
+  @include wh-100;
+  background-color: $color-primary;
+}
+
+.menu__item {
+  @include center-items;
+  justify-content: space-between;
+  background-color: $color-primary;
+  padding: $margin * 1.5 $margin * 4;
+
+  h4,
+  i {
+    color: $color-white;
+    font-size: $font-12;
+  }
+
+  h4 {
+    font-weight: $font-light;
+  }
+  i {
+    cursor: pointer;
+  }
+}
