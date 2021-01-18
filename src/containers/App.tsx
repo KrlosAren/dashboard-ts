@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import Navbar from "../components/Navbar";
+import "../styles/main.scss";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola react with TS</h1>
+    <div className="main">
+      <Navbar />
+      <div className="main__leftsidebar">left</div>
+      <div className="main__center">center</div>
+      <div className="main__rightsidebar">right</div>
     </div>
   );
 }
