@@ -1,13 +1,4 @@
-import React, {
-  AriaAttributes,
-  DetailedHTMLProps,
-  DOMAttributes,
-  HtmlHTMLAttributes,
-  MouseEvent,
-  MouseEventHandler,
-  useContext,
-  useState,
-} from "react";
+import React, { useContext, useState } from "react";
 import OptionsMenu from "./OptionsMenu";
 import { ChannelProps, Menu } from "../../interfaces/index";
 import AppContext from "../../context/AppContext";

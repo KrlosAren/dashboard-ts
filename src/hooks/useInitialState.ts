@@ -12,9 +12,6 @@ const useInitialState = () => {
   useEffect(() => {
     setHits(news.news);
   }, []);
-  // useEffect(() => {
-  //   setNews();
-  // }, [input]);
 
   return {
     state,
