@@ -1,0 +1,23 @@
+.founds {
+  @include center-items;
+  width: $w-100;
+  padding: $margin * 1.5;
+  background-color: $color-primary;
+  position: absolute;
+  bottom: 0;
+
+  p {
+    color: $color-muted;
+    font-size: $font-16;
+    font-weight: $font-regular;
+  }
+
+  button {
+    background-color: $color-muted;
+    color: $color-white;
+    border-radius: $margin * 5;
+    padding: $margin * 0.75;
+    border: none;
+    cursor: pointer;
+  }
+}

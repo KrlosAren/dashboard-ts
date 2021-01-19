@@ -9,7 +9,7 @@ const MenuItem = ({ name }: Menu) => {
   };
 
   return (
-    <div>
+    <>
       <div className="menu__item">
         <h4>{name}</h4>
         {options ? (
@@ -20,11 +20,14 @@ const MenuItem = ({ name }: Menu) => {
       </div>
       {options && (
         <>
+          {/* //TODO arreglar que solo pasemos los children que necesita
+              el contenedor
+         */}
           <OptionsMenu setting={"Edit profile"} icon={"fas fa-user-edit"} />
           <OptionsMenu setting={"Privacity"} icon={"fas fa-lock"} />
         </>
       )}
-    </div>
+    </>
   );
 };
 

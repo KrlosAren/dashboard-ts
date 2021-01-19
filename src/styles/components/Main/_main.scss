@@ -1,0 +1,8 @@
+.main__container {
+  // padding: $margin * 4 $margin * 2;
+  display: grid;
+  width: 90%;
+  margin: auto;
+  gap: $margin;
+  grid-template-columns: 35% 1fr;
+}

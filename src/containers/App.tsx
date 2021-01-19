@@ -1,5 +1,6 @@
 import React from "react";
 import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
+import Main from "../components/MainCenter/Main";
 import Navbar from "../components/Navbar/Navbar";
 import "../styles/main.scss";
 
@@ -8,7 +9,7 @@ function App() {
     <div className="main">
       <Navbar />
       <LeftSidebar />
-      <div className="main__center">center</div>
+      <Main />
       <div className="main__rightsidebar">right</div>
     </div>
   );

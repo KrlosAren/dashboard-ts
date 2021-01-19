@@ -1,4 +1,5 @@
 import React from "react";
+import Founds from "./Founds";
 import MenuItem from "./MenuItem";
 
 const LeftSidebar = () => {
@@ -10,6 +11,7 @@ const LeftSidebar = () => {
         <MenuItem name={"Tools"} />
         <MenuItem name={"Info"} />
         <MenuItem name={"Channels"} />
+        <Founds />
       </div>
     </div>
   );
