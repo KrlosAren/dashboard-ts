@@ -1,0 +1,29 @@
+.event__container {
+  margin-top: $margin;
+
+  h2 {
+    border-bottom: 2px solid red;
+    margin: $margin 0;
+  }
+}
+
+.event {
+  @include center-items;
+  padding: $margin * 0.5 $margin;
+  justify-content: space-evenly;
+
+  &__date {
+    @include center-items;
+    background-color: $color-primary;
+    padding: $margin;
+    color: $color-white;
+    flex-direction: column;
+  }
+
+  &__info {
+    font-size: $font-10;
+    i {
+      margin-left: $margin;
+    }
+  }
+}

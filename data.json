@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "name": "Eliana Stout",
+    "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50"
+  },
+  "channels": [
+    "Home",
+    "Work",
+    "Party",
+    "Exchange",
+    "Friends"
+  ],
+  "founds": [
+    {
+      "currency": "US/$",
+      "amount": "35428"
+    },
+    {
+      "currency": "Euro",
+      "amount": 38875
+    },
+    {
+      "currency": "BTC",
+      "amount": 20
+    },
+    {
+      "currency": "ETH",
+      "amount": 250
+    }
+  ],
+  "events": [
+    {
+      "date": "2021-12-04",
+      "location": "Mexico",
+      "description": "Conference"
+    },
+    {
+      "date": "2021-03-25",
+      "location": "Colorado",
+      "description": "Expo Technologies"
+    },
+    {
+      "date": "2021-02-12",
+      "location": "Colombia",
+      "description": "Workshow"
+    }
+  ],
+  "notifications": [
+    {
+      "description": "Send a message"
+    }
+  ]
+}

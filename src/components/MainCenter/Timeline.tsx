@@ -11,6 +11,7 @@ const Timeline = () => {
       </h3>
       <Message />
       <Notification />
+      <Notification />
     </div>
   );
 };

@@ -29,11 +29,7 @@ const Notification = () => {
     ],
   };
 
-  const options = {
-    scales: {
-      yAxes: [],
-    },
-  };
+  const options = { maintainAspectRatio: false };
   return (
     <div className="timeline__notification">
       <div className="notify__header">
@@ -45,7 +41,7 @@ const Notification = () => {
         <p>date</p>
       </div>
       <div className="notify__chart">
-        <Line data={data} options={options} />
+        <Line data={data} options={options} width={50} height={100} />
       </div>
       <div className="notify__stats"></div>
     </div>
