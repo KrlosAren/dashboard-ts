@@ -5,6 +5,7 @@ export interface Menu {
 export interface Settings {
   setting: string;
   icon: string;
+  color?: string;
 }
 
 export interface EventsProps {
@@ -33,4 +34,31 @@ export interface MoneyProps {
 }
 export interface MoneyType {
   money: MoneyProps;
+}
+
+export interface NewsProps {
+  url: string;
+  source: string;
+  authors: [string];
+  title: string;
+  pubDate: string;
+  country: string;
+  language: string;
+  description: string;
+  imageUrl: string;
+  content: string;
+}
+
+export interface NewsType {
+  notice: NewsProps;
+}
+
+export interface ChannelProps {
+  id: number;
+  channel: string;
+  color?: string;
+}
+
+export interface ChannelType {
+  channel: ChannelProps;
 }

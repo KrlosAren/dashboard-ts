@@ -24,11 +24,10 @@
   color: $color-white;
 
   &__previous {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include center-items;
     img {
-      width: 15%;
+      width: $margin * 3;
+      height: $margin * 3;
       margin-right: $margin;
       border-radius: 50%;
     }

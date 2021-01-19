@@ -1,18 +1,20 @@
-import React from "react";
+import { NewsType } from "../../interfaces";
+import moment from "moment";
 
-const New = () => {
+const New = ({ notice }: NewsType) => {
+  const { url, pubDate, imageUrl, description, content } = notice;
+
+  const date = moment(pubDate).fromNow();
+
   return (
     <div className="new">
       <div className="new__previous">
-        <img src="https://dummyimage.com/500/fff/fff" alt="logo-empresa" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae
-          eveniet inventore nisi
-        </p>
+        <img src={imageUrl} alt={content} />
+        <p>{description}</p>
       </div>
       <div className="new__info">
-        <p>9:00 a.m</p>
-        <a href="/">
+        <p>{date}</p>
+        <a href={url}>
           Read
           <i className="fas fa-sort-up"></i>
         </a>
