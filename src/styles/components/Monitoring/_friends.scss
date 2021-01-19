@@ -10,15 +10,21 @@
 .friend {
   @include center-items;
   width: 80%;
-  padding: $margin * 0.5;
+  padding: $margin * 0.5 0;
   justify-content: space-evenly;
   img {
-    width: 15%;
+    width: $margin * 3;
+    height: $margin * 3;
     border-radius: 50%;
     margin-right: $margin;
   }
 
   &__info {
+    h4 {
+      color: $color-primary;
+      font-size: $font-12;
+      font-weight: $font-extra-bold;
+    }
     i {
       margin-left: $margin;
     }

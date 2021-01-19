@@ -2,7 +2,6 @@
   margin-top: $margin;
 
   h2 {
-    border-bottom: 2px solid red;
     margin: $margin 0;
   }
 }
@@ -10,10 +9,11 @@
 .event {
   @include center-items;
   padding: $margin * 0.5 $margin;
-  justify-content: space-evenly;
 
   &__date {
     @include center-items;
+    width: $margin * 5;
+    height: $margin * 5;
     background-color: $color-primary;
     padding: $margin;
     color: $color-white;
@@ -21,9 +21,16 @@
   }
 
   &__info {
+    width: 60%;
     font-size: $font-10;
     i {
       margin-left: $margin;
+      color: $color-primary;
+    }
+
+    & p:last-child {
+      color: $color-notify;
+      cursor: pointer;
     }
   }
 }

@@ -1,15 +1,21 @@
-import React from "react";
+import moment from "moment";
+import { EventsProps, EventType } from "../../interfaces";
 
-const Event = () => {
+const Event = ({ event }: EventType) => {
+  const { date, location, description } = event;
+
+  const month = moment(date).format("MMM");
+  const eventDay = moment(date).format("Do");
+
   return (
     <div className="event">
       <div className="event__date">
-        <h1>4</h1>
-        <p>Monday</p>
+        <p>{eventDay}</p>
+        <p>{month}</p>
       </div>
       <div className="event__info">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Location</p>
+        <p>{description}</p>
+        <p>{location}</p>
         <p>
           Go <i className="fas fa-plus"></i>
         </p>

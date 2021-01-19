@@ -1,11 +1,13 @@
 import React from "react";
+import { FriendType } from "../../interfaces";
 
-const Friend = () => {
+const Friend = ({ friend }: FriendType) => {
+  const { img, name } = friend;
   return (
     <div className="friend">
-      <img src="https://dummyimage.com/500/black/fff" alt="logo-empresa" />
+      <img src={img} alt="profile" />
       <div className="friend__info">
-        <h4>Name</h4>
+        <h4>{name}</h4>
         <p>
           Confirm friend
           <i className="fas fa-plus"></i>

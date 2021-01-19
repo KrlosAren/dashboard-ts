@@ -1,0 +1,9 @@
+.center__contact {
+  @include center-items;
+  font-size: $font-12;
+  @include wh-100;
+  justify-content: center;
+  & span {
+    margin: $margin;
+  }
+}

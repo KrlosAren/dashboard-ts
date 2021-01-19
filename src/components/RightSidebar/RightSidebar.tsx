@@ -6,9 +6,11 @@ import FriendsRequest from "./FriendsRequest";
 const RightSidebar = () => {
   return (
     <div className="main__rightsidebar">
-      <Complete />
-      <FriendsRequest />
-      <Events />
+      <div className="monitoring__container">
+        <Complete />
+        <FriendsRequest />
+        <Events />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,35 @@
+.center__icons {
+  @include center-items;
+  @include wh-100;
+  font-size: $font-14;
+  justify-content: space-evenly;
+}
+
+.notification {
+  width: $margin;
+  height: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::after {
+    font-size: $margin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: $margin;
+    height: $margin;
+
+    background-color: $color-notify;
+    border-radius: 50%;
+    font-family: Arial;
+    position: absolute;
+
+    top: $margin;
+    left: $margin;
+    content: attr(data-count);
+  }
+}
