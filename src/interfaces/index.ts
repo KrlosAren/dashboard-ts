@@ -25,3 +25,12 @@ export interface FriendProps {
 export interface FriendType {
   friend: FriendProps;
 }
+
+export interface MoneyProps {
+  id: number;
+  currency: string;
+  amount: number;
+}
+export interface MoneyType {
+  money: MoneyProps;
+}

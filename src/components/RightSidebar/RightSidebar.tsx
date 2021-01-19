@@ -1,5 +1,5 @@
 import React from "react";
-import Complete from "./Complete";
+import Complete from "./Invesments";
 import Events from "./Events";
 import FriendsRequest from "./FriendsRequest";
 

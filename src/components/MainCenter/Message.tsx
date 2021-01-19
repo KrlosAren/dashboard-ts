@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import AppContext from "../../context/AppContext";
 
 const Message = () => {
+  const { state } = useContext(AppContext);
+  const { profile } = state;
+
   return (
     <div className="timeline__msg">
       <div className="message__card">
-        <img src="https://dummyimage.com/600x600/ebd3eb/fff" alt="user img" />
+        <img src={profile.img} alt={profile.name} />
         <input type="text" name="msg" placeholder="Type something..." />
         <i className="fas fa-search"></i>
         <i className="fas fa-paperclip"></i>

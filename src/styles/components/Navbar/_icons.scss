@@ -15,15 +15,15 @@
   position: relative;
   &::after {
     font-size: $margin;
-
+    color: $color-white;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    min-width: $margin;
-    height: $margin;
+    min-width: $margin * 1.25;
+    height: $margin * 1.25;
 
-    background-color: $color-notify;
+    background-color: $color-muted;
     border-radius: 50%;
     font-family: Arial;
     position: absolute;
