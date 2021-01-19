@@ -1,5 +1,6 @@
 import React from "react";
-import Message from "../../containers/Message";
+import Message from "./Message";
+import Notification from "./Notification";
 
 const Timeline = () => {
   return (
@@ -9,8 +10,7 @@ const Timeline = () => {
         Timeline
       </h3>
       <Message />
-      <div className="timeline__card">msg</div>
-      <div className="timeline__stats">stats</div>
+      <Notification />
     </div>
   );
 };
