@@ -1,5 +1,5 @@
 import moment from "moment";
-import { EventsProps, EventType } from "../../interfaces";
+import { EventType } from "../../interfaces";
 
 const Event = ({ event }: EventType) => {
   const { date, location, description } = event;

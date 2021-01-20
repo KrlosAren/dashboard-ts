@@ -28,7 +28,6 @@ export interface FriendType {
 }
 
 export interface MoneyProps {
-  id: number;
   currency: string;
   amount: number;
 }

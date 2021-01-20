@@ -30,12 +30,9 @@
     {
       "id": 301,
       "currency": "US/$",
-      "amount": "35428"
-    },
-    {
-      "id": 302,
-      "currency": "Euro",
-      "amount": 38875
+      "amount": [
+        35428
+      ]
     }
   ],
   "invesments": [

@@ -5,9 +5,13 @@ const Founds = () => {
   const { state } = useContext(AppContext);
   const { money } = state;
 
+  const balance = money[0].amount.reduce(
+    (total: number, cv: number) => total + cv
+  );
+
   return (
     <div className="founds">
-      <p>$ {money[0].amount}</p>
+      <p>$ {balance}</p>
       <button type="submit">Add Founds</button>
     </div>
   );

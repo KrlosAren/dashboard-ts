@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { NewsProps, NewsType } from "../interfaces/index";
 
 // dummy data
 import initialState from "../userData.json";
@@ -13,9 +12,17 @@ const useInitialState = () => {
     setHits(news.news);
   }, []);
 
+  // const addFounds = (payload: number) => {
+  //   setState({
+  //     ...state,
+  //     money: state.money[0].amount.push(payload),
+  //   });
+  // };
+
   return {
     state,
     hits,
+    // addFounds,
   };
 };
 

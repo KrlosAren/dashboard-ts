@@ -9,7 +9,7 @@ const MenuItem = ({ name }: Menu) => {
   const { channels } = state;
   const [options, setOptions] = useState(true);
   const toggleMenu = (e: React.MouseEvent) => {
-    const name = (e.target as HTMLElement).getAttribute("data-menu");
+    (e.target as HTMLElement).getAttribute("data-menu");
     setOptions(!options);
   };
 

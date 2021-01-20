@@ -1,12 +1,17 @@
-import React from "react";
 import { Line } from "react-chartjs-2";
+import crytoData from "../../currencyData.json";
+import moment from "moment";
 
 const Notification = () => {
+  const label = crytoData[0].crypto;
+  const labels = crytoData[0].dataset.map((label) => label.year);
+  const annualPrice = crytoData[0].dataset.map((data) => data.price);
+
   const data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: labels.reverse(),
     datasets: [
       {
-        label: "My First dataset",
+        label: label,
         fill: false,
         lineTension: 0.1,
         backgroundColor: "#ffffffd0",
@@ -24,24 +29,21 @@ const Notification = () => {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: annualPrice.reverse(),
       },
     ],
   };
 
-  const options = { maintainAspectRatio: false };
+  const options = { maintainAspectRatio: true };
   return (
     <div className="timeline__notification">
       <div className="notify__header">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/08/Bitcoin-Logo.png"
-          alt="icon-notify"
-        />
-        <h4>Bitcoin</h4>
-        <p>date</p>
+        <img src={crytoData[0].img} alt="icon-notify" />
+        <h4>{label}</h4>
+        <p>{moment(crytoData[0].updated_at).fromNow()}</p>
       </div>
       <div className="notify__chart">
-        <Line data={data} options={options} width={50} height={100} />
+        <Line data={data} options={options} />
       </div>
       <div className="notify__stats"></div>
     </div>
