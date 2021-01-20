@@ -6,7 +6,7 @@ cache:
 node_js: 
   - "14"
 script: 
-  - "yarn build"
+  - "yarn deploy"
 deploy:
   provider: pages
   skip_cleanup: true
