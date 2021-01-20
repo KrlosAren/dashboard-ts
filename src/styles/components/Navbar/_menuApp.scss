@@ -3,5 +3,25 @@
   @include wh-100;
   justify-content: space-around;
   font-size: $font-16;
-  border-right: 1px solid $color-primary;
+
+  div {
+    @include center-items;
+    width: 65%;
+    height: 100%;
+  }
+  img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    &:hover {
+      @include shadow;
+      cursor: pointer;
+    }
+  }
+  i {
+    &:hover {
+      color: $color-notify;
+      cursor: pointer;
+    }
+  }
 }

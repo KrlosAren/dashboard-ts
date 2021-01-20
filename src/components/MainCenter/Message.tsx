@@ -18,7 +18,6 @@ const Message = () => {
           <div className="checkbox">
             <input type="checkbox" name="check" id="check" />
             <label htmlFor="check"></label>
-            <span>Visible</span>
           </div>
           <button type="submit" className="button-secondary">
             Public

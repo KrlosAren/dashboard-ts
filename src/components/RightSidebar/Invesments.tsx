@@ -15,15 +15,22 @@ const Complete = () => {
     datasets: [
       {
         data: amount,
-        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+        backgroundColor: ["#ff577f", "#51c2d5", "#ffc764"],
+        hoverBackgroundColor: ["#ff577f", "#51c2d5", "#ffc764"],
       },
     ],
   };
-  const options = {};
+
+  const options = {
+    legend: {
+      labels: {
+        fontColor: "#fffffff5",
+      },
+    },
+  };
 
   return (
-    <div>
+    <div className="investements">
       <h2>Investments</h2>
       <Doughnut data={data} options={options} />
     </div>

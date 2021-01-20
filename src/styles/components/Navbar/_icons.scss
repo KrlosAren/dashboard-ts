@@ -3,6 +3,13 @@
   @include wh-100;
   font-size: $font-14;
   justify-content: space-evenly;
+  i {
+    &:hover {
+      color: $color-notify;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
 }
 
 .notification {
@@ -13,9 +20,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
   &::after {
     font-size: $margin;
-    color: $color-white;
+    color: $color-notify;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +31,7 @@
     min-width: $margin * 1.25;
     height: $margin * 1.25;
 
-    background-color: $color-muted;
+    background-color: $color-tertiary;
     border-radius: 50%;
     font-family: Arial;
     position: absolute;

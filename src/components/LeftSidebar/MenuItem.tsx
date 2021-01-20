@@ -15,13 +15,14 @@ const MenuItem = ({ name }: Menu) => {
 
   return (
     <>
-      <div className="menu__item">
+      <div className="menu__item" onClick={toggleMenu}>
         <h4>{name}</h4>
         {options ? (
-          <i className="fas fa-chevron-down" onClick={toggleMenu}></i>
+          <i className="fas fa-chevron-down"></i>
         ) : (
           <i
             className="fas fa-chevron-up"
+            style={{ color: "#80ffdb" }}
             onClick={toggleMenu}
             data-menu={name}
           ></i>

@@ -1,8 +1,12 @@
 .center__contact {
   @include center-items;
-  font-size: $font-12;
   @include wh-100;
+  font-size: $font-12;
   justify-content: center;
+  &:hover {
+    color: $color-notify;
+    cursor: pointer;
+  }
   & span {
     margin: $margin;
   }

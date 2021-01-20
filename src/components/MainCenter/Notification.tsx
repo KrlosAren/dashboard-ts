@@ -34,7 +34,15 @@ const Notification = () => {
     ],
   };
 
-  const options = { maintainAspectRatio: true };
+  const options = {
+    legend: {
+      labels: {
+        fontColor: "#ffffffd0",
+      },
+    },
+    responsive: true,
+    maintainAspectRatio: true,
+  };
   return (
     <div className="timeline__notification">
       <div className="notify__header">

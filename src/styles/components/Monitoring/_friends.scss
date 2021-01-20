@@ -3,6 +3,8 @@
 
   h2 {
     margin: $margin 0;
+    color: $color-white;
+    font-weight: $font-light;
   }
 }
 
@@ -10,7 +12,11 @@
   @include center-items;
   width: 80%;
   padding: $margin * 0.5 0;
+  margin: $margin * 0.25 0;
   justify-content: space-evenly;
+  &:hover > div {
+    cursor: pointer;
+  }
   img {
     width: $margin * 3;
     height: $margin * 3;
@@ -19,10 +25,18 @@
   }
 
   &__info {
+    p {
+      color: $color-notify;
+      font-weight: $font-extra-light;
+    }
+    &:hover {
+      border-bottom: 1px solid $color-notify;
+    }
     h4 {
-      color: $color-primary;
+      color: $color-white;
       font-size: $font-12;
-      font-weight: $font-extra-bold;
+      font-weight: $font-bold;
+      margin-bottom: $margin * 0.5;
     }
     i {
       margin-left: $margin;

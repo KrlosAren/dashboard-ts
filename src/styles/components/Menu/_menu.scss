@@ -4,7 +4,7 @@
 .menu__container {
   @include wh-100;
   display: flex;
-  background-color: $color-secondary;
+  background-color: $color-tertiary;
   flex-direction: column;
   position: relative;
 }
@@ -12,8 +12,13 @@
 .menu__item {
   @include center-items;
   justify-content: space-between;
-  background-color: $color-secondary;
+  background-color: $color-tertiary;
   padding: $margin * 1.5 $margin * 4;
+
+  &:hover {
+    @include shadow;
+    cursor: pointer;
+  }
 
   h4,
   i {
@@ -24,7 +29,8 @@
   h4 {
     font-weight: $font-light;
   }
-  i {
+  &:hover > i {
+    color: $color-notify;
     cursor: pointer;
   }
 }

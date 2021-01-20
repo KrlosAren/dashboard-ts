@@ -2,7 +2,7 @@
   @include center-items;
   width: $w-100;
   padding: $margin * 1.5;
-  background-color: $color-primary;
+  background-color: $color-tertiary;
   position: absolute;
   bottom: 0;
 
@@ -12,12 +12,17 @@
     font-weight: $font-regular;
   }
 
-  button {
-    background-color: $color-muted;
-    color: $color-white;
+  button[type="submit"] {
+    @include shadow;
+    background-color: $color-notify;
+    color: $color-primary;
     border-radius: $margin * 5;
     padding: $margin * 0.75;
     border: none;
     cursor: pointer;
+    &:hover {
+      background-color: $color-tertiary;
+      color: $color-notify;
+    }
   }
 }

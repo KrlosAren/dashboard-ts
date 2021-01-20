@@ -16,6 +16,7 @@
 }
 
 .new {
+  @include shadow;
   background-color: $color-secondary;
   margin: $margin * 0.5 0;
   display: flex;
@@ -47,6 +48,9 @@
       text-transform: uppercase;
       i {
         transform: rotate(90deg);
+      }
+      &:hover {
+        color: $color-tertiary;
       }
     }
   }

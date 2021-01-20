@@ -24,7 +24,7 @@
     }
 
     &::placeholder {
-      color: $color-muted;
+      color: $color-text-muted;
     }
   }
 
@@ -35,6 +35,15 @@
     color: $color-white;
     height: $margin * 2.5;
     border-radius: $margin * 2;
+
+    &:hover {
+      @include shadow;
+      cursor: pointer;
+    }
+
+    &:hover > i {
+      color: $color-notify;
+    }
 
     i {
       font-size: $font-10;

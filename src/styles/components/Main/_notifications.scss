@@ -1,8 +1,9 @@
 .timeline__notification {
-  max-height: 40em;
+  @include shadow;
   background-color: $color-secondary;
   padding: $margin;
   margin: $margin 0;
+  max-height: 40em;
 }
 
 .notify__header {
@@ -21,4 +22,7 @@
 }
 
 .notify__chart {
+  position: relative;
+  width: 100%;
+  height: auto;
 }

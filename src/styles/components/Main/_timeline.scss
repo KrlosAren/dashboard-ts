@@ -15,6 +15,7 @@
 }
 
 .timeline__msg {
+  @include shadow;
   margin: $margin * 0.5 0;
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@
 
     &::placeholder {
       font-weight: $font-light;
-      color: $color-white;
+      color: $color-text-muted;
       font-size: $font-10;
     }
   }
@@ -50,13 +51,16 @@
   i {
     font-size: $font-14;
     color: $color-white;
+    &:hover {
+      color: $color-notify;
+      cursor: pointer;
+    }
   }
 }
 
 .message__details {
+  @include wh-100;
   padding: $margin;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,6 +75,10 @@
 
     i {
       margin-left: $margin * 0.5;
+      &:hover {
+        cursor: pointer;
+        color: $color-notify;
+      }
     }
   }
 }
@@ -79,6 +87,7 @@
   cursor: pointer;
   label {
     position: relative;
+
     &::before {
       border: 1px solid $color-white;
       height: $margin * 1.2;
@@ -109,11 +118,16 @@
   }
   input[type="checkbox"]:checked + label::after {
     content: "";
+    left: 0;
+    top: -2px;
   }
 
   span {
     color: $color-white;
     margin-left: $margin * 2;
+    &:hover {
+      color: $color-notify;
+    }
   }
 }
 
@@ -122,10 +136,14 @@
 
   button {
     margin: 0 $margin * 0.5;
+    i:hover {
+      color: $color-notify;
+    }
   }
 }
 
 .send__message {
+  @include shadow;
   width: $margin * 2;
   height: $margin * 2;
   background-color: $color-notify;
@@ -133,10 +151,15 @@
   border: none;
   cursor: pointer;
   i {
-    color: $color-white;
+    color: $color-primary;
   }
   &:hover {
+    color: $color-notify;
     background-color: $color-secondary;
+  }
+
+  &:hover > i {
+    color: $color-notify;
   }
 }
 
@@ -146,6 +169,11 @@
   padding: $margin * 0.3 $margin;
   border-radius: $margin * 2;
   color: $color-white;
+  &:hover {
+    @include shadow;
+    color: $color-notify;
+    cursor: pointer;
+  }
 }
 
 .button-icon {
@@ -153,4 +181,8 @@
   color: $color-white;
   font-size: $font-16;
   border: none;
+  &:hover {
+    cursor: pointer;
+    color: $color-notify;
+  }
 }

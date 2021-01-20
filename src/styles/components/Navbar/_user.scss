@@ -17,5 +17,9 @@
 
   i {
     margin: 0 1em;
+    &:hover {
+      color: $color-notify;
+      cursor: pointer;
+    }
   }
 }
