@@ -47,5 +47,6 @@
   },
   "devDependencies": {
     "sass": "^1.32.4"
-  }
+  },
+  "homepage": "https://krlosaren.com/dashboard-ts/"
 }
